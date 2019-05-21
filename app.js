@@ -12,11 +12,11 @@ const config = {
 const app = vertex.app(config) // initialize app with config options
 
 // import routes
-const page = require('./routes/page')
+const index = require('./routes/index')
 const api = require('./routes/api')
 
 // set routes
-app.use('/', page)
+app.use('/', index)
 app.use('/api', api)
 
 
